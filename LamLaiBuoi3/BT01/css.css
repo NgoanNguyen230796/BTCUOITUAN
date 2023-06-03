@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin: 70px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.main-left {
+    width: 250px;
+    min-height: 600px;
+    /* height: auto; */
+    display: flex;
+    margin: 20px 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 1px 5px grey;
+}
+
+.sidebar-main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    margin: 10px 20px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.item a {
+    font-size: 20px;
+}
+
+.item:hover {
+    background-color: grey;
+    color: rgb(203, 160, 242);
+}
+
+.sidebar-bottom {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar-bottom img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar-bottom p {
+    font-size: 20px;
+}
+
+.main-right {
+    /* width: 1000px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /* padding: 10px; */
+}
+
+.left-item { 
+    box-shadow: 0 1px 3px grey;
+    margin: 10px 10px;
+    padding: 10px 20px; 
+}
+.left-item img{
+    width: 100%;
+    object-fit: cover;
+} 
+.left-item p:nth-child(2){
+    font-size: 23px;
+}
+.left-item p:nth-child(3){
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .main-left{
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .main-right{
+        display: grid;
+        grid-template-columns: repeat(4,200px);
+        gap: 10px;
+        padding: 10px;
+    }
+    .item {
+        display: flex;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .item a {
+        font-size: 10px;
+    }
+    .left-item p:nth-child(2){
+        font-size: 10px;
+    }
+    .left-item p:nth-child(3){
+        font-size: 10px;
+    }
+    
+
+  }

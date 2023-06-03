@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    margin: 40px auto;
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.top1 h1{
+    font-size: 50px;
+    position: relative;
+    padding: 20px 20px;
+}
+h1::after{
+    content: '';
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left:400px;
+    background-color: aqua;
+    /* margin: 20px 0; */
+}
+.top2{
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.top2 a{  
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.top2 a:nth-child(1){
+    color: aqua;
+}
+.main-bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 1px 5px grey;
+}
+.item{
+    background: url(./Anh/anhnen.jpg) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+}
+@media screen and (max-width: 800px) {
+    .main-bottom{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        box-shadow: 0 1px 5px grey;
+    }
+}
